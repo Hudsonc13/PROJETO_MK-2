@@ -1,17 +1,24 @@
 package process.entites;
 
 public class Pf extends Cliente {
-	protected String cnpj;
-	protected String razaoSocial;
-	protected String nomeFantasia;
-	protected String endereco;
-	protected String telefone;
+	private String cpf;
+	private String contato;
 	
 	
 	
-	
+	public Pf() {
+	}
+
+	public Pf(String nome, int idade, String tipoPessoa, String cpf, String contato) {
+		super(nome, idade, tipoPessoa);
+		this.cpf = cpf;
+		this.contato = contato;
+	}
+
+
+
 	@Override
-	protected void tipop() {
+	public void tipop() {
 		// TODO Auto-generated method stub
 		
 	}

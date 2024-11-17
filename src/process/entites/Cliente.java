@@ -15,6 +15,6 @@ public abstract class Cliente {
 		this.tipoPessoa = tipoPessoa;
 	}
 	
-	protected abstract void tipop();
+	public abstract void tipop();
 	
 }	
