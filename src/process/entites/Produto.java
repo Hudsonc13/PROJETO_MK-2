@@ -5,20 +5,26 @@ public abstract class Produto {
 	
 	protected String nome;
 	protected double preco;
+	protected boolean compraPJ;
+	protected String codProduto;
 	
 	
-	Produto(){
+	public Produto(){
 		
 	}
 	
-	Produto(String nome, double preco){
+	public Produto(String nome){
+		super();
+	}
+	
+	public Produto(String nome, double preco){
 		super();
 		this.nome = nome;
 		this.preco = preco;
 	}
 	
 	
-	protected String printProduto() {
+	public String printProduto() {
 		return null;
 	}
 	
