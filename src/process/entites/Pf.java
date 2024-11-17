@@ -1,9 +1,11 @@
 package process.entites;
 
 public class Pf extends Cliente {
-	protected double rendaAnual;
 	protected String cnpj;
-	protected String fantasia;
+	protected String razaoSocial;
+	protected String nomeFantasia;
+	protected String endereco;
+	protected String telefone;
 	
 	
 	
