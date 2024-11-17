@@ -2,19 +2,17 @@ package process.entites;
 
 public abstract class Cliente {
 	protected String nome;
-	protected int idade;
 	protected String tipoPessoa;
-	// protected produto[] carrinho;
-	
-	
+	protected String senha;
+	// protected produto carrinho[];
+
 	Cliente() {
 	}
-	public Cliente(String nome, int idade, String tipoPessoa) {
+
+	public Cliente(String nome, String tipoPessoa, String senha) {
 		this.nome = nome;
-		this.idade = idade;
 		this.tipoPessoa = tipoPessoa;
+		this.senha = senha;
 	}
-	
-	public abstract void tipop();
-	
-}	
+
+}
