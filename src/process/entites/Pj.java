@@ -53,7 +53,7 @@ public class Pj extends Cliente {
 				sc.next();
 				continue;
 			}
-			sc.nextLine(); // Consumir a nova linha
+			sc.nextLine();
 
 			switch (opcao) {
 			case 1:
@@ -97,8 +97,10 @@ public class Pj extends Cliente {
 	}
 
 	@Override
-	public void primirDados() {
-		// TODO Auto-generated method stub
+	public String primirDados() {
+		return "nome: " + nome + "\n" + "senha: " + senha + "\n" + "cnpj: " + cnpj + "\n" + "razaoSocial: "
+				+ razaoSocial + "\n" + "nomeFantasia: " + nomeFantasia + "\n" + "endereco: " + endereco + "\n"
+				+ "contato: " + contato;
 
 	}
 

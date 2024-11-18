@@ -9,32 +9,29 @@ import process.entites.Item;
 public class Gestao {
 	protected ArrayList<Item> estoque;
 	public ArrayList<Cliente> clientes;
-	
-	public Gestao(){
+
+	public Gestao() {
 		estoque = new ArrayList<>();
 		clientes = new ArrayList<>();
 	}
-	
 
-    public void adcEstoque(Item produto) {
-        estoque.add(produto);
-        System.out.println("Produto adicionado: " + produto);
-    }
+	public void adcEstoque(Item produto) {
+		estoque.add(produto);
+		System.out.println("Produto adicionado: " + produto);
+	}
 
-    
-    public void rmvEstoque(int idProduto) {
-        estoque.removeIf(estoque -> estoque.getIdProduto() == idProduto);
-        System.out.println("Produto removido com ID: " + idProduto);
-    }
+	public void rmvEstoque(int idProduto) {
+		estoque.removeIf(estoque -> estoque.getIdProduto() == idProduto);
+		System.out.println("Produto removido com ID: " + idProduto);
+	}
 
-    
-    public void adcCliente(Cliente cliente) {
-        clientes.add(cliente);
-        System.out.println("Cliente adicionado: " + cliente.getNome());
-    }
+	public void adcCliente(Cliente cliente) {
+		clientes.add(cliente);
+		System.out.println("Cliente adicionado: " + cliente.getNome());
+	}
 
-    public void rmvCliente(int idCliente) {
-    	clientes.removeIf(clientes -> clientes.getIdCliente() == idCliente);
-    	System.out.println("Produto removido com ID: " + idCliente);
-    }
+	public void rmvCliente(int idCliente) {
+		clientes.removeIf(clientes -> clientes.getIdCliente() == idCliente);
+		System.out.println("Produto removido com ID: " + idCliente);
+	}
 }

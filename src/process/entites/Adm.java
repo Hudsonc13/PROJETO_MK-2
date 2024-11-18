@@ -7,16 +7,13 @@ public class Adm extends Cliente {
 		this.senha = "admin123";
 	}
 
-	@Override
 	public void mudancaDados() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
-	@Override
-	public void primirDados() {
-		// TODO Auto-generated method stub
-		
+	public String primirDados() {
+		return null;
+
 	}
 
 }

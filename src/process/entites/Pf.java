@@ -73,8 +73,9 @@ public class Pf extends Cliente {
 	}
 
 	@Override
-	public void primirDados() {
-		// TODO Auto-generated method stub
-		
+	public String primirDados() {
+		return "nome: " + nome + "\n" + "senha: " + senha + "\n" + "cpf: " + cpf + "\n" + "idade: " + idade + "\n"
+				+ "contato: " + contato;
+
 	}
 }

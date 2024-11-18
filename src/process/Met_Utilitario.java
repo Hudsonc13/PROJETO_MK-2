@@ -13,7 +13,7 @@ public class Met_Utilitario {
 	Item i3 = new Item("Guidão", 65, 25, "003", true);
 	
 	 static List<Item> esc = new ArrayList<Item>();
-	//ArrayList so pode ser usado dentro da main??
+	//ArrayList so pode ser usado dentro da main?? -> não
 	public static void main(String[] args) {
 		esc.add(i);
 	}
