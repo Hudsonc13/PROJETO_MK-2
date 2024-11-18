@@ -5,12 +5,20 @@ import java.util.Scanner;
 import process.entites.*;
 
 public class UserFace {
-	
+	Gestao gestao = new Gestao();
 	public void login() {
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Bem vindo ao sistema de Vendas");
 		System.out.println("Escolha sua opção: ");
 		System.out.println("1. Entrar");
 		System.out.println("2. Cadastrar");
+		int opc = sc.nextInt();
+		if(opc == 1) {
+			
+		}
+		else if(opc == 2) {
+			cadastrar();
+		}
 	}
 	public Pf cadastrarPf() {
 		Scanner sc = new Scanner(System.in);
