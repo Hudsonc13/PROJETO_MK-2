@@ -1,19 +1,16 @@
 package process.entites;
 
-public abstract class Cliente {
+public abstract class Cliente implements TrocaDados {
 	protected String nome;
-	protected String tipoPessoa;
 	protected String senha;
 	protected int idCliente;
 	protected static int contador = 1;
-	// protected produto carrinho[];
 
 	public Cliente(){
 	}
 
-	public Cliente(String nome, String tipoPessoa, String senha) {
+	public Cliente(String nome, String senha) {
 		this.nome = nome;
-		this.tipoPessoa = tipoPessoa;
 		this.senha = senha;
 		idCliente = contador;
 		contador++;
@@ -21,4 +18,9 @@ public abstract class Cliente {
 	public String getNome() {
 		return nome;
 	}
+
+	public int getIdCliente() {
+		return idCliente;
+	}
+	
 }

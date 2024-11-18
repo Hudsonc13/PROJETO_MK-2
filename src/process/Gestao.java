@@ -33,4 +33,8 @@ public class Gestao {
         System.out.println("Cliente adicionado: " + cliente.getNome());
     }
 
+    public void rmvCliente(int idCliente) {
+    	clientes.removeIf(clientes -> clientes.getIdCliente() == idCliente);
+    	System.out.println("Produto removido com ID: " + idCliente);
+    }
 }
