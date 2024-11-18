@@ -6,7 +6,7 @@ public abstract class Cliente implements TrocaDados {
 	protected int idCliente;
 	protected static int contador = 1;
 
-	public Cliente(){
+	public Cliente() {
 	}
 
 	public Cliente(String nome, String senha) {
@@ -15,6 +15,7 @@ public abstract class Cliente implements TrocaDados {
 		idCliente = contador;
 		contador++;
 	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -22,5 +23,5 @@ public abstract class Cliente implements TrocaDados {
 	public int getIdCliente() {
 		return idCliente;
 	}
-	
+
 }

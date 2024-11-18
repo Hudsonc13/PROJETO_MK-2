@@ -23,13 +23,6 @@ public class Pj extends Cliente {
 	}
 
 	@Override
-	public String toString() {
-		return "Pj [cnpj=" + cnpj + ", razaoSocial=" + razaoSocial + ", nomeFantasia=" + nomeFantasia + ", endereco="
-				+ endereco + ", contato=" + contato + ", nome=" + nome + ", senha=" + senha + ", idCliente=" + idCliente
-				+ "]";
-	}
-
-	@Override
 	public void mudancaDados() {
 		Scanner sc = new Scanner(System.in);
 		boolean continuar = true;
@@ -100,7 +93,7 @@ public class Pj extends Cliente {
 	public String primirDados() {
 		return "nome: " + nome + "\n" + "senha: " + senha + "\n" + "cnpj: " + cnpj + "\n" + "razaoSocial: "
 				+ razaoSocial + "\n" + "nomeFantasia: " + nomeFantasia + "\n" + "endereco: " + endereco + "\n"
-				+ "contato: " + contato;
+				+ "contato: " + contato + "\n" + "idCliente: " + idCliente;
 
 	}
 

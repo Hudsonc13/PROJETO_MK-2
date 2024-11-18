@@ -18,12 +18,6 @@ public class Pf extends Cliente {
 	}
 
 	@Override
-	public String toString() {
-		return "Pf [cpf=" + cpf + ", contato=" + contato + ", idade=" + idade + ", nome=" + nome + ", senha=" + senha
-				+ ", idCliente=" + idCliente + "]";
-	}
-
-	@Override
 	public void mudancaDados() {
 		boolean continuar = true;
 		Scanner scanner = new Scanner(System.in);
@@ -75,7 +69,7 @@ public class Pf extends Cliente {
 	@Override
 	public String primirDados() {
 		return "nome: " + nome + "\n" + "senha: " + senha + "\n" + "cpf: " + cpf + "\n" + "idade: " + idade + "\n"
-				+ "contato: " + contato;
+				+ "contato: " + contato + "\n" + "idCliente: " + idCliente;
 
 	}
 }
