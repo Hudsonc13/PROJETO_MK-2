@@ -2,24 +2,25 @@ package process.entites;
 
 public class Item extends Produto {
 	
-	private int qtd;
-	private String codProduto;
-	private boolean promo;
-	private boolean compraPJ;
 	
-	Item(){
+	
+	
+	
+	private int qtd;
+	private boolean promo;
+	
+	protected Item(){
 		
 	}
 	
-	Item(String nome, double preco, int qtd, String codP, boolean promo, boolean compraPJ){
+	//ADM!
+	public Item(String nome, double preco, int qtd, String codP, boolean promo){
 		super(nome, preco);
 		this.qtd = qtd;
-		this.codProduto = codP;
 		this.promo = promo;
-		this.compraPJ = compraPJ;
 	}
 	
-	protected String printProduto() {
+	public String printProduto() {
 		return 	"cod" + codProduto
 				+"Nome: " + nome
 				+ "Valor: " + preco
@@ -27,19 +28,19 @@ public class Item extends Produto {
 	}
 
 	
-	protected int getQtd() {
+	public int getQtd() {
 		return qtd;
 	}
 
-	protected void setQtd(int qtd) {
+	public void setQtd(int qtd) {
 		this.qtd = qtd;
 	}
 
-	protected String getCodProduto() {
+	public String getCodProduto() {
 		return codProduto;
 	}
 
-	protected void setCodProduto(String codProduto) {
+	public void setCodProduto(String codProduto) {
 		this.codProduto = codProduto;
 	}
 }
