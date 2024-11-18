@@ -14,4 +14,11 @@ public class Pf extends Cliente {
 		this.contato = contato;
 	}
 
+	@Override
+	public String toString() {
+		return "Pf [cpf=" + cpf + ", contato=" + contato + ", idade=" + idade + ", nome=" + nome + ", tipoPessoa="
+				+ tipoPessoa + ", senha=" + senha + ", idCliente=" + idCliente + "]";
+	}
+
+	
 }

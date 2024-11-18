@@ -20,4 +20,12 @@ public class Pj extends Cliente {
 		this.contato = contato;
 	}
 
+	@Override
+	public String toString() {
+		return "Pj [cnpj=" + cnpj + ", razaoSocial=" + razaoSocial + ", nomeFantasia=" + nomeFantasia + ", endereco="
+				+ endereco + ", contato=" + contato + ", nome=" + nome + ", tipoPessoa=" + tipoPessoa + ", senha="
+				+ senha + ", idCliente=" + idCliente + "]";
+	}
+
+	
 }

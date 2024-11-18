@@ -8,7 +8,7 @@ import process.entites.Item;
 
 public class Gestao {
 	protected ArrayList<Item> estoque;
-	protected ArrayList<Cliente> clientes;
+	public ArrayList<Cliente> clientes;
 	
 	public Gestao(){
 		estoque = new ArrayList<>();
